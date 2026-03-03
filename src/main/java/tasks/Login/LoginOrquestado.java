@@ -222,7 +222,7 @@ public class LoginOrquestado implements Task {
         // Click en "Cerrar sesión"
         actor.attemptsTo(
                 ClickElementByText.clickElementByText(PERFIL),
-                ClickElementByText.clickElementByText(CERRAR_SESION)
+                ClickElementByText.clickElementByText(CERRAR_SESION1)
         );
 
         // Confirmación "Sí, cerrar"

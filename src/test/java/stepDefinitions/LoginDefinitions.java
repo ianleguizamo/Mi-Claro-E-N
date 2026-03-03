@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -54,12 +55,20 @@ public class LoginDefinitions {
         );
     }
 
+    @Then("^CERRAR SESION$")
+    public void CerrarSesion() {
+        theActorInTheSpotlight().attemptsTo(
+                CerrarSesion.cerrarSesion()
+        );
+    }
+
     @Then("^VERIFICA VERSION DE LA SUPER APP$")
     public void verificaVersion() {
         theActorInTheSpotlight().attemptsTo(
                 VersionSuperApp.validarVersion()
         );
     }
+
 
     @When("^REALIZA EL INGRESO CON CEDULA$")
     public void ingresoConCedula() {

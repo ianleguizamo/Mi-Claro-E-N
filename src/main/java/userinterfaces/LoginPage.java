@@ -89,9 +89,17 @@ public class LoginPage {
           Target.the("desplegar menu")
                   .located(By.id("com.clarocolombia.miclaro:id/iv_menu"));
 
+  public static final Target CERRAR_SESION =
+          Target.the("Cerrar Sesion")
+                  .located(By.id("com.clarocolombia.miclaro:id/profile_logout"));
+
+  public static final Target ACEPTAR_CERRAR_SESION =
+          Target.the("Aceptar Cerrar Sesion")
+                  .located(By.id("com.clarocolombia.miclaro:id/bt_top"));
+
   public static final Target CERRAR_MENU_DESPLEGABLE =
-          Target.the("desplegar menu")
-                  .located(By.id("com.clarocolombia.miclaro:id/iv_menu"));
+          Target.the("Cerrar menu")
+                  .located(By.id("com.clarocolombia.miclaro:id/iv_close"));
 
   public static final Target CHECK_TERMINOS_Y_CONDICIONES =
           Target.the("Texto Acepto los términos y condiciones, el tratamiento de mis datos")

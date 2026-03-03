@@ -4,9 +4,11 @@ Feature: Ingreso a la Super App
     Scenario: Login exitoso con correo electrónico
     Given EL USUARIO ABRE LA SUPER APP
     When  REALIZA EL INGRESO
-    Then  VERIFICA VERSION DE LA SUPER APP
+    And  VERIFICA VERSION DE LA SUPER APP
+    Then CERRAR SESION
 
-  @SA002
+
+  @SAL
   Scenario: Login exitoso con cédula
     Given EL USUARIO ABRE LA SUPER APP
     When  REALIZA EL INGRESO CON CEDULA
